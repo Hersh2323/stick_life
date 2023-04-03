@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://game/fonts/menufont_24.tres" type="DynamicFont" id=1]
+
+[node name="Label3D" type="Label3D"]
+billboard = 1
+text = "Milk truck just arrive.
+"
+font = ExtResource( 1 )
+horizontal_alignment = 0
+vertical_alignment = 2
+autowrap = true
+width = 200.0

@@ -1,0 +1,171 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Resource",
+"class": "Character",
+"language": "GDScript",
+"path": "res://addons/textalog/resources/character_class/character_class.gd"
+}, {
+"base": "DialogNode",
+"class": "DialogBubble",
+"language": "GDScript",
+"path": "res://addons/textalog/nodes/dialogue_bubble_node/dialog_bubble.gd"
+}, {
+"base": "Container",
+"class": "DialogManager",
+"language": "GDScript",
+"path": "res://addons/textalog/nodes/dialogue_base_node/dialog_node/dialog_node.gd"
+}, {
+"base": "Control",
+"class": "DialogNode",
+"language": "GDScript",
+"path": "res://addons/textalog/nodes/dialogue_base_node/dialogue_base_node.gd"
+}, {
+"base": "Resource",
+"class": "Event",
+"language": "GDScript",
+"path": "res://addons/event_system_plugin/resources/event_class/event_class.gd"
+}, {
+"base": "Event",
+"class": "EventCall",
+"language": "GDScript",
+"path": "res://addons/event_system_plugin/events/call_from.gd"
+}, {
+"base": "Event",
+"class": "EventComment",
+"language": "GDScript",
+"path": "res://addons/event_system_plugin/events/comment.gd"
+}, {
+"base": "Event",
+"class": "EventCondition",
+"language": "GDScript",
+"path": "res://addons/event_system_plugin/events/new_condition.gd"
+}, {
+"base": "Event",
+"class": "EventEmitSignal",
+"language": "GDScript",
+"path": "res://addons/event_system_plugin/events/emit_signal.gd"
+}, {
+"base": "Event",
+"class": "EventGoTo",
+"language": "GDScript",
+"path": "res://addons/event_system_plugin/events/goto.gd"
+}, {
+"base": "Event",
+"class": "EventHide",
+"language": "GDScript",
+"path": "res://addons/event_system_plugin/events/hide.gd"
+}, {
+"base": "Node",
+"class": "EventManager",
+"language": "GDScript",
+"path": "res://addons/event_system_plugin/nodes/event_manager/event_manager.gd"
+}, {
+"base": "Event",
+"class": "EventSet",
+"language": "GDScript",
+"path": "res://addons/event_system_plugin/events/set.gd"
+}, {
+"base": "Event",
+"class": "EventShow",
+"language": "GDScript",
+"path": "res://addons/event_system_plugin/events/show.gd"
+}, {
+"base": "Event",
+"class": "EventWait",
+"language": "GDScript",
+"path": "res://addons/event_system_plugin/events/wait.gd"
+}, {
+"base": "Container",
+"class": "OptionsManager",
+"language": "GDScript",
+"path": "res://addons/textalog/nodes/dialogue_base_node/options_node/options_node.gd"
+}, {
+"base": "KinematicBody",
+"class": "Player",
+"language": "GDScript",
+"path": "res://game/player.gd"
+}, {
+"base": "Resource",
+"class": "PlyMesh",
+"language": "GDScript",
+"path": "res://addons/ply/resources/ply_mesh.gd"
+}, {
+"base": "Resource",
+"class": "Portrait",
+"language": "GDScript",
+"path": "res://addons/textalog/resources/portrait_class/portrait_class.gd"
+}, {
+"base": "Control",
+"class": "PortraitManager",
+"language": "GDScript",
+"path": "res://addons/textalog/nodes/dialogue_base_node/portraits_node/portraits_node.gd"
+}, {
+"base": "Resource",
+"class": "Timeline",
+"language": "GDScript",
+"path": "res://addons/event_system_plugin/resources/timeline_class/timeline_class.gd"
+} ]
+_global_script_class_icons={
+"Character": "res://addons/textalog/assets/icons/character_icon.png",
+"DialogBubble": "",
+"DialogManager": "",
+"DialogNode": "",
+"Event": "res://addons/event_system_plugin/assets/icons/timeline_icon.png",
+"EventCall": "",
+"EventComment": "",
+"EventCondition": "",
+"EventEmitSignal": "",
+"EventGoTo": "",
+"EventHide": "",
+"EventManager": "",
+"EventSet": "",
+"EventShow": "",
+"EventWait": "",
+"OptionsManager": "",
+"Player": "",
+"PlyMesh": "",
+"Portrait": "res://addons/textalog/assets/icons/portrait_icon.png",
+"PortraitManager": "",
+"Timeline": "res://addons/event_system_plugin/assets/icons/timeline_icon.png"
+}
+
+[application]
+
+config/name="stick_life"
+run/main_scene="res://game/StartMenu.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+ControllerIcons="*res://addons/controller_icons/ControllerIcons.gd"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/event_system_plugin/plugin.cfg", "res://addons/textalog/plugin.cfg" )
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[layer_names]
+
+3d_physics/layer_8="object_npc_reaction_layer"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"

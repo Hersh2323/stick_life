@@ -1,0 +1,103 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://World_Floor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://dog_default.tscn" type="PackedScene" id=3]
+[ext_resource path="res://game/structures/6x4_rect_building.tscn" type="PackedScene" id=4]
+[ext_resource path="res://game/npc/generic_npc.tscn" type="PackedScene" id=5]
+[ext_resource path="res://game/npc/generic_sign.tscn" type="PackedScene" id=6]
+[ext_resource path="res://game/structures/bounding_box_wall.tscn" type="PackedScene" id=7]
+
+[sub_resource type="PhysicsMaterial" id=3]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0.000346555, -0.000111113, -0.000346551, 1, 4.34865e-05, 0.000111127, -4.34523e-05, 1, 22.7708, 0.0313113, 0.396276 )
+
+[node name="World_Floor" parent="." instance=ExtResource( 2 )]
+physics_material_override = SubResource( 3 )
+
+[node name="KinematicBody" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.0927, 1.90747, -14.2919 )
+
+[node name="rect1" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7122, -0.0773449, -8.10442 )
+
+[node name="rect2" parent="." instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 23.806, -0.0773449, -11.966 )
+
+[node name="rect3" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.9146, -0.0773449, -8.10442 )
+
+[node name="rect4" parent="." instance=ExtResource( 4 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 16.7122, -0.0773449, -5.47691 )
+
+[node name="rect5" parent="." instance=ExtResource( 4 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 28.4945, -0.0773449, -5.47691 )
+
+[node name="rect6" parent="." instance=ExtResource( 4 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 38.5602, -0.0773449, -5.47691 )
+
+[node name="Spatial" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8133, 0.00771407, -8.95611 )
+
+[node name="Spatial2" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.3828, 0.00771407, -15.3851 )
+
+[node name="Spatial3" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.186953, 0, 0.982369, 0, 1, 0, -0.982369, 0, 0.186953, 19.8423, 0.00771407, -9.2884 )
+
+[node name="Spatial4" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.6435, 0.00771407, -4.54538 )
+
+[node name="Spatial5" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.993944, 0, -0.10989, 0, 1, 0, 0.10989, 0, 0.993944, 13.2715, 0.0189812, -0.32547 )
+
+[node name="Spatial6" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.398429, 0, 0.917199, 0, 1, 0, -0.917199, 0, 0.398429, 19.8258, 0.00771407, -0.804219 )
+
+[node name="Spatial7" parent="." instance=ExtResource( 5 )]
+transform = Transform( -0.0383006, 0, -0.999266, 0, 1, 0, 0.999266, 0, -0.0383006, 35.5051, 0.00771407, -1.18705 )
+
+[node name="Spatial8" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.381796, 0, -0.924246, 0, 1, 0, 0.924246, 0, 0.381796, 35.4542, 0.00771407, -1.80164 )
+
+[node name="Spatial9" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 0.0264561, -0.99965, 0, 0.99965, 0.0264561, 25.204, 0.0335449, -1.63694 )
+
+[node name="Spatial10" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.765551, 0, 0.643376, 0, 1, 0, -0.643376, 0, 0.765551, 29.1051, 0.00771387, -11.2891 )
+
+[node name="Spatial11" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.0021816, 0, 0.999998, 0, 1, 0, -0.999998, 0, 0.0021816, 28.9225, 0.00771387, -10.5053 )
+
+[node name="Spatial12" parent="." instance=ExtResource( 5 )]
+transform = Transform( -0.746568, 0, 0.665309, 0, 1, 0, -0.665309, 0, -0.746568, 29.1711, 0.00771387, -9.85918 )
+
+[node name="Spatial13" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.2309, 0.00771387, -8.31684 )
+
+[node name="Spatial14" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.511803, 0, -0.859103, 0, 1, 0, 0.859103, 0, 0.511803, 24.7142, 0.00771407, -8.97964 )
+
+[node name="Spatial15" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.3581, 0.00771407, -13.5903 )
+
+[node name="Spatial16" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.565, 0.0188577, -13.5835 )
+
+[node name="generic_sign" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.0013, 0.00898033, -6.50854 )
+
+[node name="Spatial17" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1.34275, 0, 0, 0, 1, 0, 0, 0, 1.34275, 26.5071, 0.000830173, -38.8275 )
+
+[node name="Spatial18" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1.34275, 0, 0, 0, 1, 0, 0, 0, 1.34275, -12.6832, 0.000830173, -8.68135 )
+
+[node name="Spatial19" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1.34275, 0, 0, 0, 1, 0, 0, 0, 1.34275, 65.6866, 0.000830173, -4.71708 )
+
+[node name="Spatial20" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1.34275, 0, 0, 0, 1, 0, 0, 0, 1.34275, 28.1331, 0.000830173, 24.2754 )

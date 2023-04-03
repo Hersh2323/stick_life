@@ -1,0 +1,139 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://addons/ply/debug_material.tres" type="Material" id=1]
+[ext_resource path="res://addons/ply/resources/ply_mesh.gd" type="Script" id=2]
+[ext_resource path="res://addons/ply/nodes/ply.gd" type="Script" id=3]
+[ext_resource path="res://content/materials/sprites/player/player_default.png" type="Texture" id=4]
+[ext_resource path="res://content/materials/sprites/npc/dog_default.png" type="Texture" id=5]
+[ext_resource path="res://game/scenes/main_menu/main_menu_button_source.tscn" type="PackedScene" id=6]
+[ext_resource path="res://game/main_menu.gd" type="Script" id=7]
+[ext_resource path="res://game/fonts/menufont_48.tres" type="DynamicFont" id=10]
+[ext_resource path="res://game/structures/6x4_rect_building.tscn" type="PackedScene" id=11]
+
+[sub_resource type="ArrayMesh" id=5]
+surfaces/0 = {
+"aabb": AABB( -10.3584, 0, -9.78109, 13.4495, 1e-05, 13.4495 ),
+"array_data": PoolByteArray( 220, 187, 37, 193, 0, 0, 0, 0, 66, 199, 106, 64, 0, 0, 255, 127, 220, 187, 37, 193, 0, 0, 0, 0, 90, 127, 28, 193, 0, 0, 255, 127, 64, 213, 69, 64, 0, 0, 0, 0, 90, 127, 28, 193, 0, 0, 255, 127, 64, 213, 69, 64, 0, 0, 0, 0, 90, 127, 28, 193, 0, 0, 255, 127, 64, 213, 69, 64, 0, 0, 0, 0, 66, 199, 106, 64, 0, 0, 255, 127, 220, 187, 37, 193, 0, 0, 0, 0, 66, 199, 106, 64, 0, 0, 255, 127, 64, 213, 69, 64, 0, 0, 0, 0, 66, 199, 106, 64, 0, 0, 1, 128, 64, 213, 69, 64, 0, 0, 0, 0, 90, 127, 28, 193, 0, 0, 1, 128, 220, 187, 37, 193, 0, 0, 0, 0, 90, 127, 28, 193, 0, 0, 1, 128, 220, 187, 37, 193, 0, 0, 0, 0, 90, 127, 28, 193, 0, 0, 1, 128, 220, 187, 37, 193, 0, 0, 0, 0, 66, 199, 106, 64, 0, 0, 1, 128, 64, 213, 69, 64, 0, 0, 0, 0, 66, 199, 106, 64, 0, 0, 1, 128 ),
+"array_index_data": PoolByteArray( 0, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 11, 0 ),
+"blend_shape_data": [  ],
+"format": 2194691,
+"index_count": 12,
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 12
+}
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 2 )
+vertexes = PoolVector3Array( -10.3584, 0, -9.78109, 3.09114, 0, -9.78109, 3.09114, 0, 3.66841, -10.3584, 0, 3.66841 )
+vertex_edges = PoolIntArray( 0, 1, 2, 3 )
+edge_vertexes = PoolIntArray( 0, 1, 1, 2, 2, 3, 3, 0 )
+edge_faces = PoolIntArray( 1, 0, 1, 0, 1, 0, 1, 0 )
+edge_edges = PoolIntArray( 3, 1, 0, 2, 1, 3, 2, 0 )
+face_edges = PoolIntArray( 0, 0 )
+face_surfaces = PoolIntArray( 0, 0 )
+
+[node name="StartMenu" type="CanvasLayer"]
+
+[node name="Background" type="Spatial" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Spatial2" parent="Background" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.26378, 0, -0.436243 )
+
+[node name="Spatial" type="Spatial" parent="Background"]
+
+[node name="MeshInstance3" type="MeshInstance" parent="Background/Spatial"]
+mesh = SubResource( 5 )
+material/0 = ExtResource( 1 )
+
+[node name="PlyEditor" type="Node" parent="Background/Spatial/MeshInstance3"]
+script = ExtResource( 3 )
+ply_mesh = SubResource( 6 )
+
+[node name="player_default_sprite" type="Sprite3D" parent="Background/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.99638, 0.390299, -1.12575 )
+texture = ExtResource( 4 )
+
+[node name="player_default_sprite2" type="Sprite3D" parent="Background/Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.45682, 0.350973, -1.38605 )
+texture = ExtResource( 5 )
+
+[node name="ViewportContainer" type="ViewportContainer" parent="Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 256.0
+margin_bottom = 120.0
+
+[node name="Viewport" type="Viewport" parent="Background/ViewportContainer"]
+size = Vector2( 1280, 720 )
+handle_input_locally = false
+render_target_update_mode = 3
+
+[node name="Camera" type="Camera" parent="Background/ViewportContainer/Viewport"]
+transform = Transform( 1, 0, 0, 0, 0.941576, 0.336799, 0, -0.336799, 0.941576, -3.12125, 1.10096, 0.632717 )
+projection = 2
+near = 0.55
+
+[node name="Menu" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 7 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Menu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 45
+custom_constants/margin_top = 100
+custom_constants/margin_left = 100
+custom_constants/margin_bottom = 45
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/MarginContainer"]
+margin_left = 100.0
+margin_top = 100.0
+margin_right = 979.0
+margin_bottom = 555.0
+
+[node name="Label" type="Label" parent="Menu/MarginContainer/VBoxContainer"]
+margin_right = 879.0
+margin_bottom = 60.0
+custom_fonts/font = ExtResource( 10 )
+text = "Stick Life Alpha 1"
+
+[node name="MarginContainer" type="MarginContainer" parent="Menu/MarginContainer/VBoxContainer"]
+margin_top = 64.0
+margin_right = 879.0
+margin_bottom = 164.0
+custom_constants/margin_top = 100
+
+[node name="menu_options" type="VBoxContainer" parent="Menu/MarginContainer/VBoxContainer"]
+margin_top = 168.0
+margin_right = 879.0
+margin_bottom = 455.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="New_Game" parent="Menu/MarginContainer/VBoxContainer/menu_options" instance=ExtResource( 6 )]
+margin_bottom = 24.0
+text = "New Game"
+scene_to_load = "res://game/overworld.tscn"
+
+[node name="continue_button" parent="Menu/MarginContainer/VBoxContainer/menu_options" instance=ExtResource( 6 )]
+margin_top = 28.0
+margin_bottom = 52.0
+text = "Continue"
+scene_to_load = "res://game/overworld.tscn"
+
+[node name="settings_button" parent="Menu/MarginContainer/VBoxContainer/menu_options" instance=ExtResource( 6 )]
+margin_top = 56.0
+margin_bottom = 80.0
+text = "Settings"
+scene_to_load = "res://game/overworld.tscn"
+
+[node name="exit_button" parent="Menu/MarginContainer/VBoxContainer/menu_options" instance=ExtResource( 6 )]
+margin_top = 84.0
+margin_bottom = 108.0
+text = "Exit"
+scene_to_load = "res://game/overworld.tscn"

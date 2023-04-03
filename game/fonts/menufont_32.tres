@@ -1,0 +1,10 @@
+[gd_resource type="DynamicFont" load_steps=2 format=2]
+
+[ext_resource path="res://addons/imported_font/Montserrat-ExtraBold.ttf" type="DynamicFontData" id=1]
+
+[resource]
+resource_name = "menu_title"
+size = 32
+outline_size = 2
+outline_color = Color( 0.25098, 0.25098, 0.25098, 1 )
+font_data = ExtResource( 1 )
