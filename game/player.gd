@@ -1,76 +1,42 @@
 class_name Player
 extends KinematicBody
 
-var gravity = -9.8
-var velocity = Vector3()
-var camera
-var character
+export var max_speed = 12
+export var gravity = 70
+export var jump_impulse = 25
 
+var velocity = Vector3.ZERO
 
-const SPEED = 2
-const ACCELERATION = 6
-const DE_ACCELERATION = 5
-
-func _ready():
-# Called every time the node is added to the scene.
-# Initialization here
-# pass
-	camera = get_node("target/Camera").get_global_transform()
-	#player = get_node(".")
-
-
-#func _process(delta):
-# # Called every frame. Delta is time since last frame.
-# # Update game logic here.
-# pass
-
-
+onready var pivot = $Pivot
 
 func _physics_process(delta):
-	camera = get_node("target/Camera").get_global_transform()
-	var dir = Vector3()
+	var input_vector = get_input_vector()
+	apply_movement(input_vector)
+	apply_gravity(delta)
+	jump()
+	velocity = move_and_slide(velocity, Vector3.UP)
+	
+	
+func get_input_vector():
+	var input_vector = Vector3.ZERO
+	input_vector.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
+	input_vector.z = Input.get_action_strength("move_back") - Input.get_action_strength("move_forward")
+	
+	return input_vector.normalized()
+	
 
-	var is_moving = false
+func apply_movement(input_vector):
+	velocity.x = input_vector.x * max_speed
+	velocity.z = input_vector.z * max_speed
+	
+	if input_vector != Vector3.ZERO:
+		pivot.look_at(translation + input_vector, Vector3.UP)
+	
+	
+func apply_gravity(delta):
+	velocity.y -= gravity * delta
+	
 
-	if(Input.is_action_pressed("ui_up")):
-		dir += -camera.basis[2]
-		is_moving = true
-	if(Input.is_action_pressed("ui_down")):
-		dir += camera.basis[2]
-		is_moving = true
-	if(Input.is_action_pressed("ui_left")):
-		dir += -camera.basis[0]
-		is_moving = true
-	if(Input.is_action_pressed("ui_right")):
-		dir += camera.basis[0]
-		is_moving = true
-
-	dir.y = 0
-	dir = dir.normalized()
-
-	velocity.y += delta * gravity
-
-	var hv = velocity
-	hv.y = 0
-
-	var new_pos = dir * SPEED
-	var accel = DE_ACCELERATION
-
-	if (dir.dot(hv) > 0):
-		accel = ACCELERATION
-		
-	hv = hv.linear_interpolate(new_pos, accel * delta)
-
-	velocity.x = hv.x
-	velocity.z = hv.z
-		
-	velocity = move_and_slide(velocity, Vector3(0,1,0))
-
-	if is_moving:
-		var angle = atan2(hv.x, hv.z)
-		var char_rot = self.get_rotation()
-		
-		char_rot.y = angle
-		self.set_rotation(char_rot)
-		
-		
+func jump():
+	if is_on_floor() and Input.is_action_pressed("jump"):
+		velocity.y = jump_impulse

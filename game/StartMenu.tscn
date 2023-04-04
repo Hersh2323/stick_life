@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://addons/ply/debug_material.tres" type="Material" id=1]
 [ext_resource path="res://addons/ply/resources/ply_mesh.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://content/materials/sprites/npc/dog_default.png" type="Texture" id=5]
 [ext_resource path="res://game/scenes/main_menu/main_menu_button_source.tscn" type="PackedScene" id=6]
 [ext_resource path="res://game/main_menu.gd" type="Script" id=7]
+[ext_resource path="res://game/DirectionalLight.tscn" type="PackedScene" id=8]
 [ext_resource path="res://game/fonts/menufont_48.tres" type="DynamicFont" id=10]
 [ext_resource path="res://game/structures/6x4_rect_building.tscn" type="PackedScene" id=11]
 
@@ -76,6 +77,9 @@ render_target_update_mode = 3
 transform = Transform( 1, 0, 0, 0, 0.941576, 0.336799, 0, -0.336799, 0.941576, -3.12125, 1.10096, 0.632717 )
 projection = 2
 near = 0.55
+
+[node name="DirectionalLight" parent="Background" instance=ExtResource( 8 )]
+transform = Transform( 0.93302, 0.221763, 0.283365, -0.358723, 0.634864, 0.6843, -0.0281458, -0.740115, 0.671892, -2.14672, 4.5609, 6.67953 )
 
 [node name="Menu" type="Control" parent="."]
 anchor_right = 1.0

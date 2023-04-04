@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World_Floor.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://game/npc/generic_npc.tscn" type="PackedScene" id=5]
 [ext_resource path="res://game/npc/generic_sign.tscn" type="PackedScene" id=6]
 [ext_resource path="res://game/structures/bounding_box_wall.tscn" type="PackedScene" id=7]
+[ext_resource path="res://game/DirectionalLight.tscn" type="PackedScene" id=8]
 
 [sub_resource type="PhysicsMaterial" id=3]
 
@@ -92,12 +93,19 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.0013, 0.00898033, -6.50854 
 
 [node name="Spatial17" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1.34275, 0, 0, 0, 1, 0, 0, 0, 1.34275, 26.5071, 0.000830173, -38.8275 )
+visible = false
 
 [node name="Spatial18" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1.34275, 0, 0, 0, 1, 0, 0, 0, 1.34275, -12.6832, 0.000830173, -8.68135 )
+visible = false
 
 [node name="Spatial19" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1.34275, 0, 0, 0, 1, 0, 0, 0, 1.34275, 65.6866, 0.000830173, -4.71708 )
+visible = false
 
 [node name="Spatial20" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1.34275, 0, 0, 0, 1, 0, 0, 0, 1.34275, 28.1331, 0.000830173, 24.2754 )
+visible = false
+
+[node name="DirectionalLight" parent="." instance=ExtResource( 8 )]
+transform = Transform( 0.935408, 0.234193, 0.264887, -0.353553, 0.612372, 0.707107, 0.00339016, -0.755085, 0.655618, 29.9859, 11.6138, -0.0302831 )
