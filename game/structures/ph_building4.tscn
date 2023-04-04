@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/quaternius/Buildings Pack - Jan 2019/OBJ/Building4.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.955953, 1, 1.00294 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 0.791983, 0, 0, 0, 1.83535, 0, 0, 0, 1.83304, -0.00650978, 1.80504, -0.0146718 )
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="StaticBody"]
+mesh = ExtResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 0.791983, 0, 0, 0, 1.83535, 0, 0, 0, 1.31018, -1.52071, 1.80504, -0.0105855 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 0.791983, 0, 0, 0, 1.83535, 0, 0, 0, 1.31018, 1.45751, 1.80504, -0.0105855 )
+shape = SubResource( 1 )

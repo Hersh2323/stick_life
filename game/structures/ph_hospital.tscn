@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/quaternius/Buildings pack - Aug 2017/OBJ/Hospital.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1, 1, 0.961373 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1.97775, 0, 0, 0, 2.0924, 0, 0, 0, 1.52899, 0, 2.0638, 0 )
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="StaticBody"]
+mesh = ExtResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 0.0530313, 0, 0, 0, 0.464154, 0, 0, 0, 0.0409984, -0.584548, 0.471064, 1.85355 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 0.0530313, 0, 0, 0, 0.464154, 0, 0, 0, 0.0409984, 0.577946, 0.471064, 1.85355 )
+shape = SubResource( 1 )
