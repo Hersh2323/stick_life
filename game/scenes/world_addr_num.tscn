@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://game/fonts/world_address_num_font.tres" type="DynamicFont" id=1]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Label3D" type="Label3D" parent="."]
+text = "#1337"
+font = ExtResource( 1 )
+horizontal_alignment = 0
+vertical_alignment = 2

@@ -122,25 +122,25 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="New_Game" parent="Menu/MarginContainer/VBoxContainer/menu_options" instance=ExtResource( 6 )]
-margin_bottom = 24.0
+margin_bottom = 22.0
 text = "New Game"
 scene_to_load = "res://game/overworld.tscn"
 
 [node name="continue_button" parent="Menu/MarginContainer/VBoxContainer/menu_options" instance=ExtResource( 6 )]
-margin_top = 28.0
-margin_bottom = 52.0
+margin_top = 26.0
+margin_bottom = 48.0
 text = "Continue"
 scene_to_load = "res://game/overworld.tscn"
 
 [node name="settings_button" parent="Menu/MarginContainer/VBoxContainer/menu_options" instance=ExtResource( 6 )]
-margin_top = 56.0
-margin_bottom = 80.0
+margin_top = 52.0
+margin_bottom = 74.0
 text = "Settings"
 scene_to_load = "res://game/overworld.tscn"
 
 [node name="exit_button" parent="Menu/MarginContainer/VBoxContainer/menu_options" instance=ExtResource( 6 )]
-margin_top = 84.0
-margin_bottom = 108.0
+margin_top = 78.0
+margin_bottom = 100.0
 text = "Exit"
 scene_to_load = "res://game/overworld.tscn"
 
