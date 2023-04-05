@@ -7,9 +7,9 @@
 
 [node name="Player" type="KinematicBody"]
 script = ExtResource( 2 )
-max_speed = 6
+max_speed = 2
 gravity = 25
-jump_impulse = 5
+jump_impulse = 7
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 0.43019, 0, 0, 0, -9.10162e-09, 0.208221, 0, -0.43019, -1.88042e-08, -0.0105421, 0.325685, 0.0155263 )
