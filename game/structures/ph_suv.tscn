@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/quaternius/Realistic Car Pack - Nov 2018/OBJ/SUV.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.955953, 1, 1.00294 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 0.960008, 0, 0, 0, 0.466919, 0, 0, 0, 1.88368, -0.00650978, 0.489442, -0.0260841 )
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="StaticBody"]
+mesh = ExtResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 0.960008, 0, 0, 0, 0.24284, 0, 0, 0, 1.08042, -0.00650978, 1.22933, -0.494798 )
+shape = SubResource( 1 )

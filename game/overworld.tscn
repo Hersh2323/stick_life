@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=68 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World_Floor.tscn" type="PackedScene" id=2]
@@ -26,19 +26,62 @@
 [ext_resource path="res://game/structures/ph_building3_big.tscn" type="PackedScene" id=24]
 [ext_resource path="res://game/structures/ph_building3_small.tscn" type="PackedScene" id=25]
 [ext_resource path="res://game/structures/ph_building4.tscn" type="PackedScene" id=26]
+[ext_resource path="res://game/structures/ph_barn.tscn" type="PackedScene" id=27]
+[ext_resource path="res://game/structures/ph_bigbarn.tscn" type="PackedScene" id=28]
+[ext_resource path="res://game/structures/ph_chickencoop.tscn" type="PackedScene" id=29]
+[ext_resource path="res://game/structures/ph_fence.tscn" type="PackedScene" id=30]
+[ext_resource path="res://game/structures/ph_fence2.tscn" type="PackedScene" id=31]
+[ext_resource path="res://game/structures/ph_silo.tscn" type="PackedScene" id=32]
+[ext_resource path="res://game/structures/ph_smallbarn.tscn" type="PackedScene" id=33]
+[ext_resource path="res://game/structures/ph_towerwindmill.tscn" type="PackedScene" id=34]
+[ext_resource path="res://game/structures/ph_watertower.tscn" type="PackedScene" id=35]
+[ext_resource path="res://game/structures/ph_well.tscn" type="PackedScene" id=36]
+[ext_resource path="res://game/structures/ph_windmill.tscn" type="PackedScene" id=37]
+[ext_resource path="res://game/structures/ph_cop_car.tscn" type="PackedScene" id=38]
+[ext_resource path="res://game/structures/ph_car1.tscn" type="PackedScene" id=39]
+[ext_resource path="res://game/structures/ph_car2.tscn" type="PackedScene" id=40]
+[ext_resource path="res://game/structures/ph_sportscar1.tscn" type="PackedScene" id=41]
+[ext_resource path="res://game/structures/ph_sportscar2.tscn" type="PackedScene" id=42]
+[ext_resource path="res://game/structures/ph_suv.tscn" type="PackedScene" id=43]
+[ext_resource path="res://game/structures/ph_taxi.tscn" type="PackedScene" id=44]
+[ext_resource path="res://game/structures/ph_1story.tscn" type="PackedScene" id=45]
+[ext_resource path="res://game/structures/ph_1story_gableroof.tscn" type="PackedScene" id=46]
+[ext_resource path="res://game/structures/ph_1story_roundroof.tscn" type="PackedScene" id=47]
+[ext_resource path="res://game/structures/ph_2story.tscn" type="PackedScene" id=48]
+[ext_resource path="res://game/structures/ph_2story_2.tscn" type="PackedScene" id=49]
+[ext_resource path="res://game/structures/ph_2story_balcony.tscn" type="PackedScene" id=50]
+[ext_resource path="res://game/structures/ph_2story_gableroof.tscn" type="PackedScene" id=51]
+[ext_resource path="res://game/structures/ph_2story_columns.tscn" type="PackedScene" id=52]
+[ext_resource path="res://game/structures/ph_2story_sidehouse.tscn" type="PackedScene" id=53]
+[ext_resource path="res://game/structures/ph_3story_slim.tscn" type="PackedScene" id=54]
+[ext_resource path="res://game/structures/ph_2story_wide.tscn" type="PackedScene" id=55]
+[ext_resource path="res://game/structures/ph_3story_small.tscn" type="PackedScene" id=56]
+[ext_resource path="res://game/structures/ph_4story_wide_2doors.tscn" type="PackedScene" id=57]
+[ext_resource path="res://game/structures/ph_6story_stack.tscn" type="PackedScene" id=58]
+[ext_resource path="res://game/structures/ph_3story_balcony.tscn" type="PackedScene" id=59]
+[ext_resource path="res://game/structures/ph_2story_stairs.tscn" type="PackedScene" id=60]
+[ext_resource path="res://game/structures/ph_4story_wide_2doors_roof.tscn" type="PackedScene" id=61]
+[ext_resource path="res://game/structures/ph_2story_sign.tscn" type="PackedScene" id=62]
+[ext_resource path="res://game/structures/ph_4story.tscn" type="PackedScene" id=63]
+[ext_resource path="res://game/structures/ph_2story_wide2doors.tscn" type="PackedScene" id=64]
+[ext_resource path="res://game/structures/ph_2story_slim.tscn" type="PackedScene" id=65]
+[ext_resource path="res://game/structures/ph_4story_center.tscn" type="PackedScene" id=66]
 
 [sub_resource type="PhysicsMaterial" id=3]
 
 [node name="Spatial" type="Spatial"]
 
+[node name="Spatial32" parent="." instance=ExtResource( 28 )]
+transform = Transform( 1, 0.000346555, -0.000111113, -0.000346551, 1, 4.34865e-05, 0.000111127, -4.34523e-05, 1, 57.8368, 0.00153928, 12.95 )
+
 [node name="Player" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0.000346555, -0.000111113, -0.000346551, 1, 4.34865e-05, 0.000111127, -4.34523e-05, 1, 53.1311, 0.0203698, -9.28703 )
+transform = Transform( 1, 0.000346555, -0.000111113, -0.000346551, 1, 4.34865e-05, 0.000111127, -4.34523e-05, 1, 42.6679, 0.0249875, 13.4791 )
 
 [node name="World_Floor" parent="." instance=ExtResource( 2 )]
 physics_material_override = SubResource( 3 )
 
 [node name="KinematicBody" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35.6357, 1.53508, -12.6568 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35.6357, 1.53508, -21.8957 )
 
 [node name="rect1" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7122, -0.0773449, -8.10442 )
@@ -92,34 +135,34 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.0013, 0.00898033, -6.50854 
 transform = Transform( 0.935408, 0.234193, 0.264887, -0.353553, 0.612372, 0.707107, 0.00339016, -0.755085, 0.655618, 29.9859, 11.6138, -0.0302831 )
 
 [node name="bank" parent="." instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34.9731, -0.0297422, -17.5818 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34.9731, -0.0297422, -26.4329 )
 
 [node name="Spatial19" parent="." instance=ExtResource( 15 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.3607, 0.000591278, -15.2818 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.3607, 0.000591278, -24.1329 )
 
 [node name="Spatial9" parent="." instance=ExtResource( 9 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 45.4393, 0.00137806, -14.7573 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 45.4393, 0.00137806, -23.6084 )
 
 [node name="Spatial10" parent="." instance=ExtResource( 11 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.0462, 0.00122762, -15.3487 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.0462, 0.00122762, -24.1998 )
 
 [node name="Spatial17" parent="." instance=ExtResource( 13 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55.9445, 0.00347853, -16.1787 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55.9445, 0.00347853, -25.0298 )
 
 [node name="Spatial18" parent="." instance=ExtResource( 12 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 59.0304, 0.00346899, -15.2536 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 59.0304, 0.00346899, -24.1047 )
 
 [node name="Spatial11" parent="." instance=ExtResource( 10 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 0, -15 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 0, -23.8511 )
 
 [node name="Spatial12" parent="." instance=ExtResource( 14 )]
-transform = Transform( 1, 2.46647e-12, 0, 2.99005e-12, 1, 0, 3.63798e-11, 0, 1, 62.4899, -0.0144725, -15.3078 )
+transform = Transform( 1, 2.46647e-12, 0, 2.99005e-12, 1, 0, 3.63798e-11, 0, 1, 62.4899, -0.0144725, -24.1589 )
 
 [node name="Spatial20" parent="." instance=ExtResource( 16 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 72.4, 0.000712395, -14.6854 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 72.4, 0.000712395, -23.5365 )
 
 [node name="Spatial21" parent="." instance=ExtResource( 17 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 80.2985, 0.000689268, -14.3435 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 80.2985, 0.000689268, -23.1946 )
 
 [node name="Spatial22" parent="." instance=ExtResource( 18 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 50.6156, 0.000566006, -4.2195 )
@@ -147,3 +190,120 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 115.922, 0.000329494, -8.06109
 
 [node name="Spatial29" parent="." instance=ExtResource( 25 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 124.623, 0.000900745, -7.90435 )
+
+[node name="Spatial31" parent="." instance=ExtResource( 27 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 51.9179, 0.00106192, 12.9029 )
+
+[node name="Spatial33" parent="." instance=ExtResource( 29 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 61.8082, 0.000787735, 14.3115 )
+
+[node name="Spatial34" parent="." instance=ExtResource( 30 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 65.2333, 0, 14.6654 )
+
+[node name="Spatial35" parent="." instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 65.3012, 0.000489473, 13.4237 )
+
+[node name="Spatial36" parent="." instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 68.4654, 0.00107956, 13.8105 )
+
+[node name="Spatial37" parent="." instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 63.22, 0.00139689, 10.091 )
+
+[node name="Spatial38" parent="." instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 72.0286, 0.00228572, 13.4691 )
+
+[node name="Spatial39" parent="." instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 75.1644, 0.00164461, 13.8459 )
+
+[node name="Spatial40" parent="." instance=ExtResource( 36 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 77.2009, 0.00270987, 13.2256 )
+
+[node name="Spatial41" parent="." instance=ExtResource( 37 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 78.9947, 0.000439644, 12.4239 )
+
+[node name="Spatial42" parent="." instance=ExtResource( 38 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.0558, 0.0022049, 11.843 )
+
+[node name="Spatial43" parent="." instance=ExtResource( 39 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38.0481, 0.00219297, 11.6787 )
+
+[node name="Spatial44" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36.1339, 0.00219953, 11.6874 )
+
+[node name="Spatial46" parent="." instance=ExtResource( 42 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.5648, 0.00139296, 11.5603 )
+
+[node name="Spatial45" parent="." instance=ExtResource( 41 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34.5247, 0.00295055, 11.6082 )
+
+[node name="Spatial47" parent="." instance=ExtResource( 43 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.4846, 0.00144994, 11.5029 )
+
+[node name="Spatial48" parent="." instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.5516, 0.00287819, 11.2111 )
+
+[node name="Spatial49" parent="." instance=ExtResource( 45 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.7995, 0.000246525, 6.85158 )
+
+[node name="Spatial50" parent="." instance=ExtResource( 46 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.8905, 0.000340462, 6.802 )
+
+[node name="Spatial51" parent="." instance=ExtResource( 47 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9463, 0.000335217, 6.78299 )
+
+[node name="Spatial52" parent="." instance=ExtResource( 48 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.31051, 0.000576496, 6.66536 )
+
+[node name="Spatial53" parent="." instance=ExtResource( 49 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.21628, 0.00014019, 6.58055 )
+
+[node name="Spatial54" parent="." instance=ExtResource( 50 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.858648, 0.000572205, 6.70335 )
+
+[node name="Spatial55" parent="." instance=ExtResource( 52 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95645, 0.0021863, 5.97902 )
+
+[node name="Spatial56" parent="." instance=ExtResource( 51 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.75483, 0.0016222, 5.784 )
+
+[node name="Spatial57" parent="." instance=ExtResource( 53 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6611, 0.00131798, 6.60638 )
+
+[node name="Spatial58" parent="." instance=ExtResource( 62 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.8845, 0.00216293, 5.90511 )
+
+[node name="Spatial59" parent="." instance=ExtResource( 65 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.3653, 0.00107765, 5.76829 )
+
+[node name="Spatial60" parent="." instance=ExtResource( 60 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -27.1926, 0.00101233, 5.94179 )
+
+[node name="Spatial61" parent="." instance=ExtResource( 55 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -33.324, 0.00160694, 6.04014 )
+
+[node name="Spatial62" parent="." instance=ExtResource( 64 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -42.462, 0.000932693, 5.94629 )
+
+[node name="Spatial63" parent="." instance=ExtResource( 59 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.0451, 0.000664234, 21.5181 )
+
+[node name="Spatial64" parent="." instance=ExtResource( 54 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3301, 0.00067091, 21.53 )
+
+[node name="Spatial65" parent="." instance=ExtResource( 56 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.8057, 0.00140905, 22.0789 )
+
+[node name="Spatial66" parent="." instance=ExtResource( 63 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.65778, 0.000725269, 22.6026 )
+
+[node name="Spatial67" parent="." instance=ExtResource( 66 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.33938, 0.000717163, 23.4899 )
+
+[node name="Spatial68" parent="." instance=ExtResource( 57 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.31884, 0.000382423, 23.7216 )
+
+[node name="Spatial69" parent="." instance=ExtResource( 61 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.2787, 0.00033474, 23.8917 )
+
+[node name="Spatial70" parent="." instance=ExtResource( 58 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28.7881, 0.000368118, 25.8898 )

@@ -1,7 +1,7 @@
 class_name Player
 extends KinematicBody
 
-export var max_speed = 12
+export var max_speed = 700
 export var gravity = 70
 export var jump_impulse = 25
 

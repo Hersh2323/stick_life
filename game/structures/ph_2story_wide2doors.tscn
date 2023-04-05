@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/quaternius/Ultimate Textured Building Pack - Dec 2019/Textured Models/Finished Textured Buildings/OBJ/2Story_Wide_2Doors.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.942066, 2.66964, 0.75678 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 8.36121, 0, 0, 0, 1.35815, 0, 0, 0, 3.5433, -0.00650978, 3.61947, -0.381469 )
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="StaticBody"]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0 )
+mesh = ExtResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1.30304, 0, 0, 0, 0.0528484, 0, 0, 0, 1.16746, -2.45492, 0.128567, 2.66819 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1.3298, 0, 0, 0, 1.35815, 0, 0, 0, 3.99125, -8.85512, 3.61947, 0.00142473 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1.3298, 0, 0, 0, 1.35815, 0, 0, 0, 3.99125, 8.90954, 3.61947, 0.00142473 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1.30304, 0, 0, 0, 0.0528484, 0, 0, 0, 1.16746, 2.44102, 0.128567, 2.66819 )
+shape = SubResource( 1 )

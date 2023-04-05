@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/quaternius/Farm Buildings - Sept 2018/OBJ/Silo.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="CylinderShape" id=1]
+height = 1.85892
+
+[node name="Spatial" type="Spatial"]
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( -0.845579, 0, -1.35071e-07, 0, 2.54861, 0, 1.27679e-07, 0, -0.894537, -0.000533288, 2.27316, 0.00643311 )
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="StaticBody"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
+mesh = ExtResource( 1 )
