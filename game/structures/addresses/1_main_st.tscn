@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://game/structures/ph_building4.tscn" type="PackedScene" id=1]
 [ext_resource path="res://game/scenes/world_addr_num.tscn" type="PackedScene" id=2]
+[ext_resource path="res://game/vehicles/car_AHC1015.tscn" type="PackedScene" id=3]
 
 [node name="Spatial" type="Spatial"]
 
@@ -9,3 +10,6 @@
 
 [node name="addr_num" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.742117, 1.80032, 3.58819 )
+
+[node name="Spatial2" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.999897, 0, -0.0143811, 0, 1, 0, 0.0143811, 0, -0.999897, -5.79701, 0, 1.18649 )

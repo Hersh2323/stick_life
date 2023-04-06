@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://game/fonts/world_info_font.tres" type="DynamicFont" id=1]
+
+[sub_resource type="CylinderShape" id=1]
+
+[node name="KinematicBody" type="KinematicBody"]
+
+[node name="Area" type="Area" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+shape = SubResource( 1 )
+
+[node name="Label3D" type="Label3D" parent="."]
+font = ExtResource( 1 )

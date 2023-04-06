@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=2]
+[gd_scene load_steps=74 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World_Floor.tscn" type="PackedScene" id=2]
@@ -70,7 +70,6 @@
 [ext_resource path="res://game/structures/roads/ph_SingleLane_Straight_2.tscn" type="PackedScene" id=68]
 [ext_resource path="res://game/structures/roads/ph_SingleLane_Cross_SingleLane.tscn" type="PackedScene" id=69]
 [ext_resource path="res://game/scenes/WorldLabel.tscn" type="PackedScene" id=70]
-[ext_resource path="res://game/fonts/menufont_24.tres" type="DynamicFont" id=71]
 [ext_resource path="res://game/structures/addresses/1_main_st.tscn" type="PackedScene" id=72]
 [ext_resource path="res://game/structures/addresses/3_main_st.tscn" type="PackedScene" id=73]
 
@@ -246,9 +245,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36.1339, 0.00219953, 11.6874 )
 
 [node name="Spatial46" parent="." instance=ExtResource( 42 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.5648, 0.00139296, 11.5603 )
-
-[node name="Spatial74" parent="." instance=ExtResource( 43 )]
-transform = Transform( -0.99916, 0, 0.0409688, 0, 1, 0, -0.0409688, 0, -0.99916, -98.8308, 0.00157404, -106.03 )
 
 [node name="Spatial73" parent="." instance=ExtResource( 41 )]
 transform = Transform( 0.998061, 0, 0.0622505, 0, 1, 0, -0.0622505, 0, 0.998061, -98.633, 0.00208688, -101.434 )
@@ -439,18 +435,8 @@ transform = Transform( 0.0858169, 0, 0.996311, 0, 1, 0, -0.996311, 0, 0.0858169,
 [node name="Spatial91" parent="." instance=ExtResource( 70 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -96.0742, 2.19115, -77.4505 )
 
-[node name="Label3D" parent="Spatial91" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.08488, -0.257711, -0.566055 )
-text = "125 FAKE ST."
-font = ExtResource( 71 )
-
 [node name="Spatial92" parent="." instance=ExtResource( 70 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -87.3939, 0.555668, -81.1995 )
-
-[node name="Label3D" parent="Spatial92" index="0"]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.16588, -0.253906, -0.19146 )
-text = "L4xa45u"
-font = ExtResource( 71 )
 
 [node name="SingleLane Straight 19" parent="." instance=ExtResource( 68 )]
 transform = Transform( 5.96244e-09, 0, -0.5, 0, 0.5, 0, 0.5, 0, 5.96244e-09, -140, 0, -75 )
