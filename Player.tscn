@@ -18,7 +18,7 @@ shape = SubResource( 1 )
 [node name="Pivot" type="Spatial" parent="."]
 
 [node name="rotation" type="Position3D" parent="."]
-transform = Transform( 0.707107, 0.5, -0.5, 0, 0.707106, 0.707106, 0.707107, -0.5, 0.5, 0, 0, 0 )
+transform = Transform( 0.707107, 0.640856, -0.298836, 0, 0.422618, 0.906307, 0.707107, -0.640856, 0.298836, 0, 0, 0 )
 
 [node name="Sprite3D" type="Sprite3D" parent="rotation"]
 transform = Transform( 1, 2.98023e-08, -5.96046e-08, -4.47035e-08, 1, -1.04308e-07, 8.9407e-08, 1.49012e-07, 1, 0, 0.282126, 0.0709377 )
@@ -30,5 +30,5 @@ transform = Transform( 2.5, 2.46231e-07, -5.86435e-07, -5.96046e-08, 2.5, -8.344
 projection = 1
 current = true
 size = 5.0
-near = 0.1
+near = 0.01
 far = 25.0
