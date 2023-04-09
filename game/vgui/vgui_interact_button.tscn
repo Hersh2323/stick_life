@@ -1,0 +1,10 @@
+[gd_scene format=2]
+
+[node name="vgui_interact_button" type="Button"]
+visible = false
+margin_right = 425.0
+margin_bottom = 325.0
+rect_min_size = Vector2( 425, 325 )
+disabled = true
+action_mode = 0
+text = "Placeholder Text"

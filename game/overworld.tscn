@@ -471,6 +471,9 @@ transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -95.8652,
 [node name="Label3D" parent="1_main_st/addr_num" index="0"]
 text = "#1"
 
+[node name="generic_npc" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.123601, 0, -0.992332, 0, 1, 0, 0.992332, 0, 0.123601, -98.5873, -0.00512868, -119.543 )
+
 [editable path="Spatial91"]
 [editable path="Spatial92"]
 [editable path="3_main_st"]
