@@ -1,0 +1,61 @@
+{
+	"events": [
+		{
+			"character": "character-1681003199.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I heard Jamal from 90th street watched that tape last week and this mornin' he woke up dead!"
+		},
+		{
+			"character": "character-1681003234.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "How the hell do you wake up dead?"
+		},
+		{
+			"character": "character-1681003199.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Cause' you're alive when you go to sleep."
+		},
+		{
+			"character": "character-1681003234.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So you're telling me you can go to bed dead and wake up alive?"
+		},
+		{
+			"character": "character-1681003199.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You can't go to bed dead! That shit would've been redundant."
+		},
+		{
+			"character": "character-1681003234.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No it would'nt cause' you can go to bed and not be dead, and you can die and not be in the bed"
+		},
+		{
+			"character": "character-1681003199.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But you are in the bed. That's how you wake up dead in the first place fool!"
+		},
+		{
+			"character": "character-1681003234.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Damn! that's some quantum shit right there man! You should be teaching classes!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1681003262.json",
+		"name": "timeline-test_1"
+	}
+}
