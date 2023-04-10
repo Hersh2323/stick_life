@@ -472,7 +472,7 @@ transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -95.8652,
 text = "#1"
 
 [node name="generic_npc" parent="." instance=ExtResource( 5 )]
-transform = Transform( 0.123601, 0, -0.992332, 0, 1, 0, 0.992332, 0, 0.123601, -98.5873, -0.00512868, -119.543 )
+transform = Transform( 0.123601, 0, -0.992332, 0, 1, 0, 0.992332, 0, 0.123601, -102.399, -0.00512868, -97.5808 )
 
 [editable path="Spatial91"]
 [editable path="Spatial92"]
@@ -480,3 +480,4 @@ transform = Transform( 0.123601, 0, -0.992332, 0, 1, 0, 0.992332, 0, 0.123601, -
 [editable path="3_main_st/num label"]
 [editable path="1_main_st"]
 [editable path="1_main_st/addr_num"]
+[editable path="1_main_st/generic_npc"]

@@ -1,0 +1,77 @@
+{
+	"events": [
+		{
+			"character": "character-1681003234.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Hey hows it going?"
+		},
+		{
+			"choice": "Good. How are you?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Could be better. You?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1681003234.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I'm alright. This place stinks. Truly. The neighbour was a hermit and left all his trash behind. That was months ago. Still filled with trash."
+		},
+		{
+			"choice": "How did this hermet get evicted?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1681003234.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "From what I heard he left to go to the store and the landlord changed the locks. I think it was the first time he left the house in months."
+		},
+		{
+			"choice": "That's awful. Can you smell it in your apartment?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1681003234.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yup. It stinks."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1681081845.json",
+		"name": "timeline-michaeljohnson_1"
+	}
+}
