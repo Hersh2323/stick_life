@@ -17,7 +17,7 @@ func _ready():
 
 func _input(event):
 	if get_node_or_null('DialogNode') == null:
-		if event.is_action_pressed("ui_accept") and alert_active:
+		if event.is_action_pressed("ui_left") and alert_active:
 			get_tree().paused = true
 			var dialog = Dialogic.start(scene_string)
 			dialog.pause_mode = Node.PAUSE_MODE_PROCESS
