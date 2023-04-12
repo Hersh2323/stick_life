@@ -3,16 +3,17 @@
 importer="texture"
 type="StreamTexture"
 path.s3tc="res://.import/basic_npc_relaxed.png-7641891de6151a34e579824fb90b67c0.s3tc.stex"
+path.etc2="res://.import/basic_npc_relaxed.png-7641891de6151a34e579824fb90b67c0.etc2.stex"
 path.etc="res://.import/basic_npc_relaxed.png-7641891de6151a34e579824fb90b67c0.etc.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc" ],
+"imported_formats": [ "s3tc", "etc2", "etc" ],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://content/materials/sprites/npc/basic_npc_relaxed.png"
-dest_files=[ "res://.import/basic_npc_relaxed.png-7641891de6151a34e579824fb90b67c0.s3tc.stex", "res://.import/basic_npc_relaxed.png-7641891de6151a34e579824fb90b67c0.etc.stex" ]
+dest_files=[ "res://.import/basic_npc_relaxed.png-7641891de6151a34e579824fb90b67c0.s3tc.stex", "res://.import/basic_npc_relaxed.png-7641891de6151a34e579824fb90b67c0.etc2.stex", "res://.import/basic_npc_relaxed.png-7641891de6151a34e579824fb90b67c0.etc.stex" ]
 
 [params]
 

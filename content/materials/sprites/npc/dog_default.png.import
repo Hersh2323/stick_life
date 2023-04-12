@@ -3,16 +3,17 @@
 importer="texture"
 type="StreamTexture"
 path.s3tc="res://.import/dog_default.png-a00aebbe318707d3866d5080ce7aa42e.s3tc.stex"
+path.etc2="res://.import/dog_default.png-a00aebbe318707d3866d5080ce7aa42e.etc2.stex"
 path.etc="res://.import/dog_default.png-a00aebbe318707d3866d5080ce7aa42e.etc.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc" ],
+"imported_formats": [ "s3tc", "etc2", "etc" ],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://content/materials/sprites/npc/dog_default.png"
-dest_files=[ "res://.import/dog_default.png-a00aebbe318707d3866d5080ce7aa42e.s3tc.stex", "res://.import/dog_default.png-a00aebbe318707d3866d5080ce7aa42e.etc.stex" ]
+dest_files=[ "res://.import/dog_default.png-a00aebbe318707d3866d5080ce7aa42e.s3tc.stex", "res://.import/dog_default.png-a00aebbe318707d3866d5080ce7aa42e.etc2.stex", "res://.import/dog_default.png-a00aebbe318707d3866d5080ce7aa42e.etc.stex" ]
 
 [params]
 
