@@ -185,9 +185,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 96.1856, 0.00108624, -6.89759 
 [node name="Spatial27" parent="." instance=ExtResource( 23 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 106.434, 0.000338554, -6.91677 )
 
-[node name="Spatial76" parent="." instance=ExtResource( 21 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -89.1752, 0.000379086, -105.903 )
-
 [node name="Spatial25" parent="." instance=ExtResource( 21 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 86.0617, 0.000107765, -7.21907 )
 
@@ -241,9 +238,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36.1339, 0.00219953, 11.6874 )
 
 [node name="Spatial46" parent="." instance=ExtResource( 42 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.5648, 0.00139296, 11.5603 )
-
-[node name="Spatial73" parent="." instance=ExtResource( 41 )]
-transform = Transform( 0.998061, 0, 0.0622505, 0, 1, 0, -0.0622505, 0, 0.998061, -98.633, 0.00208688, -101.434 )
 
 [node name="Spatial45" parent="." instance=ExtResource( 41 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34.5247, 0.00295055, 11.6082 )
@@ -344,9 +338,6 @@ transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -105, 0, -105 )
 [node name="SingleLane Straight 5" parent="." instance=ExtResource( 68 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -105, 0, -110 )
 
-[node name="Spatial71" parent="." instance=ExtResource( 24 )]
-transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -95.6635, 0.000329494, -103.564 )
-
 [node name="SingleLane Straight 6" parent="." instance=ExtResource( 68 )]
 transform = Transform( -2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -105, 0, -95 )
 
@@ -425,9 +416,6 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -87.377
 [node name="Spatial89" parent="." instance=ExtResource( 41 )]
 transform = Transform( 0.0861125, 0, 0.996285, 0, 1, 0, -0.996285, 0, 0.0861125, -88.5635, 0.0195947, -81.0854 )
 
-[node name="Spatial90" parent="." instance=ExtResource( 41 )]
-transform = Transform( 0.0858169, 0, 0.996311, 0, 1, 0, -0.996311, 0, 0.0858169, -91.3481, 0.00208688, -102.53 )
-
 [node name="Spatial91" parent="." instance=ExtResource( 70 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -96.0742, 2.19115, -77.4505 )
 
@@ -456,15 +444,26 @@ transform = Transform( 5.96244e-09, 0, -0.5, 0, 0.5, 0, 0.5, 0, 5.96244e-09, -11
 transform = Transform( -2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, -110, 0, -75 )
 
 [node name="3_main_st" parent="." instance=ExtResource( 73 )]
-transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -95.5536, 0, -108.431 )
+transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -95.5536, 0, -105.283 )
+
+[node name="mesh" parent="3_main_st" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.110435, 0, -2.99644 )
 
 [node name="Label3D" parent="3_main_st/num label" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47644, 1.06266, -2.0273 )
 text = "#3"
 
 [node name="1_main_st" parent="." instance=ExtResource( 72 )]
-transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -95.8652, 0.00391603, -116.134 )
+transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -95.6857, 0.00391555, -112.182 )
+
+[node name="Spatial" parent="1_main_st" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.31647, 0, -2.54708 )
+
+[node name="addr_num" parent="1_main_st" index="1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.44958, 1.80032, 1.57802 )
 
 [node name="Label3D" parent="1_main_st/addr_num" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.183273, -0.35474, 1.26901 )
 text = "#1"
 
 [node name="generic_npc" parent="." instance=ExtResource( 5 )]

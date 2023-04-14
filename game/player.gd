@@ -61,4 +61,5 @@ func _on_vgui_interact_button1_pressed():
 	var ev = InputEventAction.new()
 	ev.action = "ui_left"
 	ev.pressed = true
-	var ev_input = Input.parse_input_event(ev)
+	Input.parse_input_event(ev)
+
