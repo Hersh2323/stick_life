@@ -57,6 +57,7 @@ func _on_VirtualJoystick_analogic_chage(move):
 
 
 
+
 func _on_vgui_interact_button1_pressed():
 	var ev = InputEventAction.new()
 	ev.action = "ui_left"

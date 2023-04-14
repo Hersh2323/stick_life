@@ -454,17 +454,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47644, 1.06266, -2.0273 )
 text = "#3"
 
 [node name="1_main_st" parent="." instance=ExtResource( 72 )]
-transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -95.6857, 0.00391555, -112.182 )
-
-[node name="Spatial" parent="1_main_st" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.31647, 0, -2.54708 )
-
-[node name="addr_num" parent="1_main_st" index="1"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.44958, 1.80032, 1.57802 )
-
-[node name="Label3D" parent="1_main_st/addr_num" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.183273, -0.35474, 1.26901 )
-text = "#1"
+transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -91.6718, 0.00391555, -114.563 )
 
 [node name="generic_npc" parent="." instance=ExtResource( 5 )]
 transform = Transform( 0.123601, 0, -0.992332, 0, 1, 0, 0.992332, 0, 0.123601, -102.399, -0.00512868, -97.5808 )
@@ -473,6 +463,3 @@ transform = Transform( 0.123601, 0, -0.992332, 0, 1, 0, 0.992332, 0, 0.123601, -
 [editable path="Spatial92"]
 [editable path="3_main_st"]
 [editable path="3_main_st/num label"]
-[editable path="1_main_st"]
-[editable path="1_main_st/addr_num"]
-[editable path="1_main_st/generic_npc"]

@@ -22,31 +22,31 @@ anchor_bottom = 1.0
 margin_top = -40.0
 margin_right = 40.0
 grow_vertical = 0
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="vgui_interact_button1" parent="Control_ui_elements/InteractionContainer" instance=ExtResource( 2 )]
-visible = true
 disabled = false
-text = "YES / CONFIRM"
+text = "Interact"
 
 [node name="vgui_interact_button2" parent="Control_ui_elements/InteractionContainer" instance=ExtResource( 2 )]
-margin_left = 429.0
-margin_right = 854.0
-text = "NEUTRAL / AVOID RESPONSE"
+visible = false
+margin_left = 354.0
+margin_right = 704.0
 
 [node name="vgui_interact_button3" parent="Control_ui_elements/InteractionContainer" instance=ExtResource( 2 )]
-margin_left = 858.0
-margin_right = 1283.0
-text = "NO / NEGATIVE RESPONSE"
+visible = false
+margin_left = 354.0
+margin_right = 704.0
 
 [node name="JoystickContainer" type="HBoxContainer" parent="Control_ui_elements"]
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -699.0
-margin_top = -515.0
-margin_right = -187.0
-margin_bottom = -3.0
+margin_left = -512.0
+margin_top = -512.0
 rect_min_size = Vector2( 512, 512 )
 
 [node name="VirtualJoystick" type="Node2D" parent="Control_ui_elements/JoystickContainer"]
@@ -61,6 +61,7 @@ stick = ExtResource( 4 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -100.536, 0.204756, -119.439 )
 
 [connection signal="pressed" from="Control_ui_elements/InteractionContainer/vgui_interact_button1" to="Player" method="_on_vgui_interact_button1_pressed"]
+[connection signal="pressed" from="Control_ui_elements/InteractionContainer/vgui_interact_button1/TouchScreenButton" to="Player" method="_on_vgui_interact_button1_pressed"]
 [connection signal="analogic_chage" from="Control_ui_elements/JoystickContainer/VirtualJoystick" to="Player" method="_on_VirtualJoystick_analogic_chage"]
 
 [editable path="Control_ui_elements/InteractionContainer/vgui_interact_button1"]
