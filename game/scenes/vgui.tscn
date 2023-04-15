@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://game/overworld.tscn" type="PackedScene" id=1]
 [ext_resource path="res://game/vgui/vgui_interact_button.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://addons/virtual_joystick/sprites/stick.png" type="Texture" id=4]
 [ext_resource path="res://addons/virtual_joystick/scripts/virtual_joystick.gd" type="Script" id=5]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://content/materials/ui/interaction_button.png" type="Texture" id=7]
 
 [node name="User Interface" type="CanvasLayer"]
 
@@ -30,6 +31,10 @@ __meta__ = {
 disabled = false
 text = "Interact"
 
+[node name="TouchScreenButton" parent="Control_ui_elements/InteractionContainer/vgui_interact_button1" index="0"]
+pressed = ExtResource( 7 )
+visibility_mode = 1
+
 [node name="vgui_interact_button2" parent="Control_ui_elements/InteractionContainer" instance=ExtResource( 2 )]
 visible = false
 margin_left = 354.0
@@ -39,6 +44,7 @@ margin_right = 704.0
 visible = false
 margin_left = 354.0
 margin_right = 704.0
+disabled = false
 
 [node name="JoystickContainer" type="HBoxContainer" parent="Control_ui_elements"]
 anchor_left = 1.0
@@ -61,7 +67,7 @@ stick = ExtResource( 4 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -100.536, 0.204756, -119.439 )
 
 [connection signal="pressed" from="Control_ui_elements/InteractionContainer/vgui_interact_button1" to="Player" method="_on_vgui_interact_button1_pressed"]
-[connection signal="pressed" from="Control_ui_elements/InteractionContainer/vgui_interact_button1/TouchScreenButton" to="Player" method="_on_vgui_interact_button1_pressed"]
+[connection signal="pressed" from="Control_ui_elements/InteractionContainer/vgui_interact_button1/TouchScreenButton" to="Player" method="_on_TouchScreenButton1_pressed"]
 [connection signal="analogic_chage" from="Control_ui_elements/JoystickContainer/VirtualJoystick" to="Player" method="_on_VirtualJoystick_analogic_chage"]
 
 [editable path="Control_ui_elements/InteractionContainer/vgui_interact_button1"]

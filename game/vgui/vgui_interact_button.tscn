@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://content/materials/ui/interaction_button.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -11,6 +13,5 @@ action_mode = 0
 text = "Placeholder Text"
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="."]
-scale = Vector2( 17.4837, 9.98672 )
+normal = ExtResource( 1 )
 shape = SubResource( 1 )
-visibility_mode = 1

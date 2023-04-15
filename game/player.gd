@@ -64,3 +64,11 @@ func _on_vgui_interact_button1_pressed():
 	ev.pressed = true
 	Input.parse_input_event(ev)
 
+
+
+
+func _on_TouchScreenButton1_pressed():
+	var ev = InputEventAction.new()
+	ev.action = "ui_left"
+	ev.pressed = true
+	Input.parse_input_event(ev)

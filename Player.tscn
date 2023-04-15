@@ -8,7 +8,7 @@ height = 2.51245
 
 [node name="Player" type="KinematicBody"]
 script = ExtResource( 2 )
-max_speed = 2
+max_speed = 3
 gravity = 25
 jump_impulse = 7
 
