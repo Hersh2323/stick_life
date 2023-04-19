@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/dev2x2m.obj-82915087f07b3dd823d15879be63d018.mesh"
+
+[deps]
+
+files=[ "res://.import/dev2x2m.obj-82915087f07b3dd823d15879be63d018.mesh" ]
+
+source_file="res://content/models/dev2x2m.obj"
+dest_files=[ "res://.import/dev2x2m.obj-82915087f07b3dd823d15879be63d018.mesh", "res://.import/dev2x2m.obj-82915087f07b3dd823d15879be63d018.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

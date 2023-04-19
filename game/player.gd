@@ -59,16 +59,16 @@ func _on_VirtualJoystick_analogic_chage(move):
 
 
 func _on_vgui_interact_button1_pressed():
+	jump()
 	var ev = InputEventAction.new()
 	ev.action = "ui_left"
 	ev.pressed = true
 	Input.parse_input_event(ev)
-
-
-
-
+	print("_on_vgui_interact_button1_pressed(): has fired")
+	
 func _on_TouchScreenButton1_pressed():
-	var ev = InputEventAction.new()
-	ev.action = "ui_left"
-	ev.pressed = true
-	Input.parse_input_event(ev)
+	var event_action = InputEventAction.new()
+	event_action.action = "ui_left"
+	event_action.pressed = true
+	Input.parse_input_event(event_action)
+	print("_on_TouchScreenButton1_pressed(): has fired")

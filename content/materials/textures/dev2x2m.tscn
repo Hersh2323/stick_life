@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://content/models/dev2x2m.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+[node name="Spatial" type="MeshInstance"]
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
