@@ -65,10 +65,17 @@ func _on_vgui_interact_button1_pressed():
 	ev.pressed = true
 	Input.parse_input_event(ev)
 	print("_on_vgui_interact_button1_pressed(): has fired")
-	
-func _on_TouchScreenButton1_pressed():
-	var event_action = InputEventAction.new()
-	event_action.action = "ui_left"
-	event_action.pressed = true
-	Input.parse_input_event(event_action)
-	print("_on_TouchScreenButton1_pressed(): has fired")
+
+
+func _on_vgui_interact_button2_button_down():
+	var ev = InputEventAction.new()
+	ev.action = "jump"
+	ev.pressed = true
+	Input.parse_input_event(ev)
+
+
+func _on_vgui_interact_button2_button_up():
+	var ev = InputEventAction.new()
+	ev.action = "jump"
+	ev.pressed = false
+	Input.parse_input_event(ev)

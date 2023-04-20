@@ -1,4 +1,6 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://content/materials/ui/interaction_button.png" type="Texture" id=1]
 
 [node name="vgui_interact_button" type="Button"]
 margin_right = 350.0
@@ -7,3 +9,6 @@ rect_min_size = Vector2( 350, 200 )
 disabled = true
 action_mode = 0
 text = "Placeholder Text"
+icon = ExtResource( 1 )
+flat = true
+icon_align = 1
