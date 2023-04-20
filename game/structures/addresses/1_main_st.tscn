@@ -16,7 +16,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.742117, 1.80032, 4.13381 )
 transform = Transform( -0.999897, 0, -0.0143811, 0, 1, 0, 0.0143811, 0, -0.999897, -8.30557, 0, 2.1774 )
 
 [node name="generic_npc" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.88188, -2.38418e-07, 8.59479 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.32625, -2.38418e-07, 4.38545 )
 
 [node name="Area" parent="generic_npc" index="2"]
 scene_string = "/timeline-michaeljohnson_1"

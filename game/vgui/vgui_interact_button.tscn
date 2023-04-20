@@ -6,6 +6,7 @@
 margin_right = 350.0
 margin_bottom = 200.0
 rect_min_size = Vector2( 350, 200 )
+focus_mode = 0
 disabled = true
 action_mode = 0
 text = "Placeholder Text"

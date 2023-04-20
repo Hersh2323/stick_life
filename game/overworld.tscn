@@ -1,5 +1,6 @@
-[gd_scene load_steps=73 format=2]
+[gd_scene load_steps=74 format=2]
 
+[ext_resource path="res://portal_door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World_Floor.tscn" type="PackedScene" id=2]
 [ext_resource path="res://dog_default.tscn" type="PackedScene" id=3]
 [ext_resource path="res://game/structures/6x4_rect_building.tscn" type="PackedScene" id=4]
@@ -74,7 +75,7 @@
 
 [sub_resource type="PhysicsMaterial" id=3]
 
-[node name="Spatial" type="Spatial"]
+[node name="overworld_scene" type="Spatial"]
 
 [node name="Spatial32" parent="." instance=ExtResource( 28 )]
 transform = Transform( 1, 0.000346555, -0.000111113, -0.000346551, 1, 4.34865e-05, 0.000111127, -4.34523e-05, 1, 57.8368, 0.00153928, 12.95 )
@@ -458,6 +459,9 @@ transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -91.6718,
 
 [node name="generic_npc" parent="." instance=ExtResource( 5 )]
 transform = Transform( 0.123601, 0, -0.992332, 0, 1, 0, 0.992332, 0, 0.123601, -102.399, -0.00512868, -97.5808 )
+
+[node name="portal_door" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0, 0, -1, 0, 1, 0, 1, 0, 0, -98.1528, 0, -114.545 )
 
 [editable path="Spatial91"]
 [editable path="Spatial92"]

@@ -55,9 +55,6 @@ func _on_VirtualJoystick_analogic_chage(move):
 	touch_x = move[0]
 	touch_y = move[1]
 
-
-
-
 func _on_vgui_interact_button1_pressed():
 	jump()
 	var ev = InputEventAction.new()
