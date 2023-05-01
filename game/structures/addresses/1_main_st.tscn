@@ -10,7 +10,10 @@
 [node name="Spatial" parent="." instance=ExtResource( 1 )]
 
 [node name="addr_num" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.742117, 1.80032, 4.13381 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.948876, 1.33866, 5.37966 )
+
+[node name="Label3D" parent="addr_num" index="0"]
+text = "#1"
 
 [node name="Spatial2" parent="." instance=ExtResource( 3 )]
 transform = Transform( -0.999897, 0, -0.0143811, 0, 1, 0, 0.0143811, 0, -0.999897, -8.30557, 0, 2.1774 )
@@ -21,4 +24,5 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.32625, -2.38418e-07, 4.3854
 [node name="Area" parent="generic_npc" index="2"]
 scene_string = "/timeline-michaeljohnson_1"
 
+[editable path="addr_num"]
 [editable path="generic_npc"]

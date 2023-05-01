@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1682053156.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wish I had a dollar. Had one once. but no more."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682053122.json",
+		"name": "timeline-1682053122"
+	}
+}

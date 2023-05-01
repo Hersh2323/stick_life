@@ -8,7 +8,7 @@ extents = Vector3( 1, 1, 1.04748 )
 [node name="Spatial" type="Spatial"]
 
 [node name="StaticBody" type="StaticBody" parent="."]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
+transform = Transform( 2.9, 0, 0, 0, 2.9, 0, 0, 0, 2.9, 0, 0, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
 transform = Transform( 1.66428, 0, 0, 0, 0.44177, 0, 0, 0, 1.09251, 0.186431, 0.435763, 0.00791812 )

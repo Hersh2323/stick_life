@@ -6,6 +6,7 @@
 [node name="Spatial" type="Spatial"]
 
 [node name="Car" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0 )
 
 [node name="generic_sign" parent="." instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.11529e-08, 0.251347, -1.04695 )
